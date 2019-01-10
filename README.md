@@ -10,7 +10,7 @@
     window.ws = new MyWebSocket("ws://127.0.0.1:11301");
     //设置回调事件
     ws.onopen = function () {
-        w.send("test")
+        ws.send("test")
     }
     ws.onmessage = function (data) {
         console.info(data.data)
